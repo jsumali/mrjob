@@ -241,7 +241,7 @@ class MRJobRunner(object):
 
     #: alias for this runner; used for picking section of
     #: :py:mod:``mrjob.conf`` to load one of ``'local'``, ``'emr'``,
-    #: or ``'hadoop'``
+    #: ``'hadoop'``, or ``'mapr'``
     alias = None
 
     OPTION_STORE_CLASS = RunnerOptionStore

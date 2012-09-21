@@ -21,6 +21,7 @@ from optparse import OptionParser
 import os
 import sys
 import time
+from mrjob.mapr import MapRJobRunner
 
 try:
     from cStringIO import StringIO
@@ -162,6 +163,9 @@ class MRJobLauncher(object):
 
         elif self.options.runner == 'hadoop':
             return HadoopJobRunner(**self.hadoop_job_runner_kwargs())
+
+        elif self.options.runner == 'mapr':
+            return MapRJobRunner(**self.hadoop_job_runner_kwargs())
 
         elif self.options.runner == 'inline':
             raise ValueError("inline is not supported in the multi-lingual"

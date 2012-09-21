@@ -145,7 +145,7 @@ def add_runner_opts(opt_group, default_runner='local'):
 
         opt_group.add_option(
             '-r', '--runner', dest='runner', default=default_runner,
-            choices=('local', 'hadoop', 'emr', 'inline'),
+            choices=('local', 'hadoop', 'emr', 'mapr', 'inline'),
             help=('Where to run the job: local to run locally, hadoop to run'
                   ' on your Hadoop cluster, emr to run on Amazon'
                   ' ElasticMapReduce, and inline for local debugging. Default'

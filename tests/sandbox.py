@@ -44,6 +44,9 @@ EMPTY_MRJOB_CONF = {'runners': {
     'inline': {
         'label': 'test_job',
     },
+    'mapr': {
+        'label': 'test_job',
+    }
 }}
 
 
